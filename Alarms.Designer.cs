@@ -57,17 +57,16 @@
             dgAlarms.Name = "dgAlarms";
             dgAlarms.ReadOnly = true;
             dgAlarms.RowHeadersWidth = 62;
-            dgAlarms.Size = new Size(1325, 452);
+            dgAlarms.Size = new Size(911, 452);
             dgAlarms.TabIndex = 0;
             dgAlarms.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lstMessages
             // 
             lstMessages.FormattingEnabled = true;
-            lstMessages.ItemHeight = 25;
             lstMessages.Location = new Point(41, 539);
             lstMessages.Name = "lstMessages";
-            lstMessages.Size = new Size(1325, 129);
+            lstMessages.Size = new Size(1095, 129);
             lstMessages.TabIndex = 1;
             lstMessages.SelectedIndexChanged += lstMessages_SelectedIndexChanged;
             // 
@@ -77,7 +76,7 @@
             // 
             // btnActiveAlarms
             // 
-            btnActiveAlarms.Location = new Point(1387, 41);
+            btnActiveAlarms.Location = new Point(977, 41);
             btnActiveAlarms.Name = "btnActiveAlarms";
             btnActiveAlarms.Size = new Size(159, 34);
             btnActiveAlarms.TabIndex = 2;
@@ -87,7 +86,7 @@
             // 
             // btnAllAlarms
             // 
-            btnAllAlarms.Location = new Point(1387, 81);
+            btnAllAlarms.Location = new Point(977, 81);
             btnAllAlarms.Name = "btnAllAlarms";
             btnAllAlarms.Size = new Size(159, 34);
             btnAllAlarms.TabIndex = 3;
@@ -108,7 +107,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1558, 680);
+            ClientSize = new Size(1182, 680);
             Controls.Add(label6);
             Controls.Add(btnAllAlarms);
             Controls.Add(btnActiveAlarms);

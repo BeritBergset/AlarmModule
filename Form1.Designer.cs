@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             txtServer = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -35,73 +37,144 @@
             label3 = new Label();
             txtDatabase = new TextBox();
             BtnNewAlarmModule = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            txtIpAdresse = new TextBox();
+            label4 = new Label();
+            txtPort = new TextBox();
+            label5 = new Label();
+            label6 = new Label();
+            txtOpcServerName = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            lstMessages = new ListBox();
+            label9 = new Label();
+            txtPCSName = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // txtServer
             // 
-            txtServer.Location = new Point(63, 87);
+            resources.ApplyResources(txtServer, "txtServer");
             txtServer.Name = "txtServer";
-            txtServer.Size = new Size(467, 31);
-            txtServer.TabIndex = 0;
             txtServer.TextChanged += txtServer_TextChanged;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(66, 57);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(61, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Server";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(69, 134);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(91, 25);
-            label2.TabIndex = 3;
-            label2.Text = "SQLserver";
             // 
             // txtSqlServer
             // 
-            txtSqlServer.Location = new Point(66, 164);
+            resources.ApplyResources(txtSqlServer, "txtSqlServer");
             txtSqlServer.Name = "txtSqlServer";
-            txtSqlServer.Size = new Size(467, 31);
-            txtSqlServer.TabIndex = 2;
             txtSqlServer.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(72, 218);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(138, 25);
-            label3.TabIndex = 5;
-            label3.Text = "Database Name";
             // 
             // txtDatabase
             // 
-            txtDatabase.Location = new Point(69, 248);
+            resources.ApplyResources(txtDatabase, "txtDatabase");
             txtDatabase.Name = "txtDatabase";
-            txtDatabase.Size = new Size(467, 31);
-            txtDatabase.TabIndex = 4;
             // 
             // BtnNewAlarmModule
             // 
-            BtnNewAlarmModule.Location = new Point(71, 322);
+            resources.ApplyResources(BtnNewAlarmModule, "BtnNewAlarmModule");
             BtnNewAlarmModule.Name = "BtnNewAlarmModule";
-            BtnNewAlarmModule.Size = new Size(465, 34);
-            BtnNewAlarmModule.TabIndex = 6;
-            BtnNewAlarmModule.Text = "Start Alarm Module";
             BtnNewAlarmModule.UseVisualStyleBackColor = true;
             BtnNewAlarmModule.Click += button1_Click;
             // 
+            // txtIpAdresse
+            // 
+            resources.ApplyResources(txtIpAdresse, "txtIpAdresse");
+            txtIpAdresse.Name = "txtIpAdresse";
+            txtIpAdresse.TextChanged += textBox1_TextChanged_1;
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            label4.Click += label4_Click;
+            // 
+            // txtPort
+            // 
+            resources.ApplyResources(txtPort, "txtPort");
+            txtPort.Name = "txtPort";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            label5.Click += label5_Click;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
+            label6.Click += label6_Click;
+            // 
+            // txtOpcServerName
+            // 
+            resources.ApplyResources(txtOpcServerName, "txtOpcServerName");
+            txtOpcServerName.Name = "txtOpcServerName";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
+            // 
+            // lstMessages
+            // 
+            lstMessages.FormattingEnabled = true;
+            resources.ApplyResources(lstMessages, "lstMessages");
+            lstMessages.Name = "lstMessages";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
+            // 
+            // txtPCSName
+            // 
+            resources.ApplyResources(txtPCSName, "txtPCSName");
+            txtPCSName.Name = "txtPCSName";
+            txtPCSName.TextChanged += textBox1_TextChanged_2;
+            // 
+            // label10
+            // 
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
+            label10.Click += label10_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1206, 652);
+            Controls.Add(label10);
+            Controls.Add(txtPCSName);
+            Controls.Add(label9);
+            Controls.Add(lstMessages);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(txtOpcServerName);
+            Controls.Add(label5);
+            Controls.Add(txtPort);
+            Controls.Add(label4);
+            Controls.Add(txtIpAdresse);
             Controls.Add(BtnNewAlarmModule);
             Controls.Add(label3);
             Controls.Add(txtDatabase);
@@ -110,7 +183,6 @@
             Controls.Add(label1);
             Controls.Add(txtServer);
             Name = "Form1";
-            Text = "Alarm Module";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -125,5 +197,18 @@
         private Label label3;
         private TextBox txtDatabase;
         private Button BtnNewAlarmModule;
+        public System.Windows.Forms.Timer timer1;
+        private TextBox txtIpAdresse;
+        private Label label4;
+        private TextBox txtPort;
+        private Label label5;
+        private Label label6;
+        private TextBox txtOpcServerName;
+        private Label label7;
+        private Label label8;
+        private ListBox lstMessages;
+        private Label label9;
+        private TextBox txtPCSName;
+        private Label label10;
     }
 }
